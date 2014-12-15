@@ -9,13 +9,13 @@
            itemId: 'validationNum',
            xtype: 'textfield',
            name: 'name',
-           fieldLabel: 'validationNumero'
-           /*validation function () {
+           fieldLabel: 'validationNumero',
+           validator: function () {
 
 
-               
+               return true;
 
-           }*/
+           }
        }
     ]
 });
