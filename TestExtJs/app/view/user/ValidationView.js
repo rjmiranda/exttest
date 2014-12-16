@@ -10,17 +10,19 @@
            xtype: 'textfield',
            name: 'name',
            fieldLabel: 'validationView',
-           validator: function (x) {
-               if (x != 0 ) {
-                 // return  console.log(x);
+           validator: function (value) {
+              
+               if (value != 0) {
+                   return true;
 
                } else {
-                   console.log(false);
-                   console.log('Error, Ingreso cualquier cosa');
+                   return 'no se puede ingresar 0';
+
+
                }
-               var dividendo;
-               dividendo = x;
-               console.log(dividendo);
+
+                   
+                  
 
            }
 
