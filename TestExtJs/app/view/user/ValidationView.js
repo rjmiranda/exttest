@@ -9,23 +9,13 @@
            itemId: 'validationNum',
            xtype: 'textfield',
            name: 'name',
-           fieldLabel: 'validationView',
-           validator: function (x) {
-               if (x != 0 ) {
-                 // return  console.log(x);
+           fieldLabel: 'validationNumero',
+           validator: function () {
 
-               } else {
-                   console.log(false);
-                   console.log('Error, Ingreso cualquier cosa');
-               }
-               var dividendo;
-               dividendo = x;
-               console.log(dividendo);
+
+               return true;
 
            }
-
        }
-
-
     ]
 });
